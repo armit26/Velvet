@@ -1,75 +1,114 @@
-# React + TypeScript + Vite
+VELVET.
+Reality Engine / 01
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+See beyond the surface.
 
-Currently, two official plugins are available:
+VELVET is an experimental, browser-based computer vision platform that transforms a live camera feed into an interactive perception interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Built to explore the intersection of computer vision, machine learning and spatial intelligence.
 
-## React Compiler
+!VELVET
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+✦ Features
+Live camera perception — Access your camera directly from the browser.
+Real-time object detection — Recognize supported objects using Google's MediaPipe Object Detector.
+Visual detection overlays — Draw bounding boxes around detected objects.
+Confidence scoring — Display model confidence percentages for each detection.
+Scene inspector — View detected objects and their confidence scores in a live dashboard.
+Local inference — Run object detection in the browser without sending camera footage to a custom backend.
+◈ Technology
+Technology	Purpose
+React	User interface
+TypeScript	Application logic
+Vite	Development and build tooling
+MediaPipe Tasks Vision	Object detection
+Lucide React	Interface icons
+Framer Motion	UI animations
+◈ How it works
+The browser requests camera permission.
+The camera provides a live video stream.
+MediaPipe loads a pretrained object detection model.
+The model processes video frames.
+Detected objects are displayed with bounding boxes and confidence scores.
+Results appear in the VELVET perception dashboard.
+◈ Getting started
+Requirements
+Node.js
+npm
+A modern browser
+A webcam
+Installation
 
-## Expanding the ESLint configuration
+Clone the repository:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+bash
+git clone https://github.com/armit26/Velvet.git
+cd Velvet
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Install dependencies:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+bash
+npm install
 
-```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Start the development server:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+bash
+npm run dev
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 
-```
+Open the local URL displayed in your terminal.
+
+Camera permissions
+
+Allow camera access when prompted by your browser.
+
+The application uses browser camera APIs and requires a secure context. Localhost is supported for development.
+
+The first launch may download the MediaPipe model and vision runtime.
+
+◈ Project structure
+text
+Velvet/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── vision/
+│   │   └── detector.ts
+│   ├── App.tsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.tsx
+├── package.json
+└── vite.config.ts
+
+◈ Current development status
+Component	Status
+Monochrome interface	Complete
+Live camera input	Complete
+MediaPipe integration	Complete
+Object detection	Complete
+Bounding box rendering	Complete
+Confidence display	Complete
+Persistent object tracking	Planned
+Spatial mapping	Planned
+Interactive 3D environment	Planned
+◈ Vision
+
+VELVET aims to evolve beyond object detection into a platform for understanding physical environments.
+
+Future experiments include persistent object tracking, spatial mapping, scene intelligence and interactive digital representations.
+
+◈ Privacy
+
+Camera access requires explicit browser permission. Video processing is performed locally in the browser using MediaPipe.
+
+The current application does not intentionally upload camera footage to a custom backend.
+
+
+<p align="center">
+**VELVET — REALITY, REIMAGINED.**
+</p>
+
+An independent experimental project. Built with curiosity.
