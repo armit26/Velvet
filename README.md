@@ -4,18 +4,18 @@ REALITY ENGINE / 01
 
 See beyond the surface.
 
-VELVET is an experimental, browser-based computer vision platform that transforms live camera input into an interactive perception interface.
+VELVET is an experimental browser-based computer vision platform that transforms live camera input into an interactive perception interface.
 
 Exploring the intersection of computer vision, machine learning and spatial intelligence.
 
-✦ FEATURES
+FEATURES
 Live Camera Perception — Access your webcam directly in the browser.
 Real-Time Object Detection — Detect supported objects using MediaPipe.
 Visual Detection Overlays — Display bounding boxes around detected objects.
 Confidence Scoring — View model confidence percentages.
 Scene Inspector — Explore detected objects through a live dashboard.
 Local Inference — Process camera frames directly in the browser.
-◈ TECHNOLOGY STACK
+TECHNOLOGY STACK
 Technology	Purpose
 React	User interface
 TypeScript	Application logic
@@ -23,14 +23,14 @@ Vite	Development and build tooling
 MediaPipe Tasks Vision	Object detection
 Lucide React	Interface icons
 Framer Motion	UI animations
-◈ HOW IT WORKS
-The browser requests camera permission.
-The camera provides a live video stream.
+HOW IT WORKS
+Browser requests camera permission.
+Camera provides a live video stream.
 MediaPipe loads a pretrained object detection model.
 The model processes video frames.
-Detected objects are displayed with bounding boxes and confidence scores.
+Detected objects appear with bounding boxes and confidence scores.
 Results appear in the VELVET perception dashboard.
-◈ GETTING STARTED
+GETTING STARTED
 Requirements
 Node.js
 npm
@@ -38,20 +38,20 @@ Modern browser
 Webcam
 Installation
 
-1. Clone the repository
+Clone the repository
 
 bash
 git clone https://github.com/armit26/Velvet.git
 cd Velvet
 
 
-2. Install dependencies
+Install dependencies
 
 bash
 npm install
 
 
-3. Start the development server
+Start the development server
 
 bash
 npm run dev
@@ -67,7 +67,7 @@ Camera access requires a secure browser context. Localhost is supported during d
 
 The first launch may download the MediaPipe model and vision runtime.
 
-◈ PROJECT STRUCTURE
+PROJECT STRUCTURE
 text
 Velvet/
 ├── public/
@@ -83,7 +83,7 @@ Velvet/
 ├── package-lock.json
 └── vite.config.ts
 
-◈ DEVELOPMENT STATUS
+DEVELOPMENT STATUS
 Component	Status
 Monochrome Interface	Complete
 Live Camera Input	Complete
@@ -94,22 +94,20 @@ Confidence Display	Complete
 Persistent Object Tracking	Planned
 Spatial Mapping	Planned
 Interactive 3D Environment	Planned
-◈ VISION
+VISION
 
 VELVET aims to evolve beyond object detection into a platform for understanding physical environments.
 
 Future experiments include persistent object tracking, spatial mapping, scene intelligence and interactive digital representations.
 
-◈ PRIVACY
+PRIVACY
 
 Camera access requires explicit browser permission.
 
 Video processing is performed locally in the browser using MediaPipe. The current application does not intentionally upload camera footage to a custom backend.
 
 <p align="center">
-
-VELVET — REALITY, REIMAGINED.
-
-An independent experimental project. Built with curiosity.
-
+<strong>VELVET — REALITY, REIMAGINED.</strong>
+<br>
+<sub>An independent experimental project. Built with curiosity.</sub>
 </p>
