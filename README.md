@@ -9,12 +9,12 @@ VELVET is an experimental, browser-based computer vision platform that transform
 Exploring the intersection of computer vision, machine learning and spatial intelligence.
 
 ✦ FEATURES
-Live camera perception — Access your webcam directly in the browser.
-Real-time object detection — Detect supported objects using MediaPipe.
-Visual detection overlays — Display bounding boxes around detected objects.
-Confidence scoring — View model confidence percentages.
-Scene inspector — Explore detected objects through a live dashboard.
-Local inference — Process camera frames directly in the browser.
+Live Camera Perception — Access your webcam directly in the browser.
+Real-Time Object Detection — Detect supported objects using MediaPipe.
+Visual Detection Overlays — Display bounding boxes around detected objects.
+Confidence Scoring — View model confidence percentages.
+Scene Inspector — Explore detected objects through a live dashboard.
+Local Inference — Process camera frames directly in the browser.
 ◈ TECHNOLOGY STACK
 Technology	Purpose
 React	User interface
@@ -59,7 +59,7 @@ npm run dev
 
 Open the localhost URL displayed in your terminal.
 
-Camera permissions
+Camera Permissions
 
 Allow camera access when prompted by your browser.
 
@@ -85,15 +85,15 @@ Velvet/
 
 ◈ DEVELOPMENT STATUS
 Component	Status
-Monochrome interface	Complete
-Live camera input	Complete
-MediaPipe integration	Complete
-Object detection	Complete
-Bounding box rendering	Complete
-Confidence display	Complete
-Persistent object tracking	Planned
-Spatial mapping	Planned
-Interactive 3D environment	Planned
+Monochrome Interface	Complete
+Live Camera Input	Complete
+MediaPipe Integration	Complete
+Object Detection	Complete
+Bounding Box Rendering	Complete
+Confidence Display	Complete
+Persistent Object Tracking	Planned
+Spatial Mapping	Planned
+Interactive 3D Environment	Planned
 ◈ VISION
 
 VELVET aims to evolve beyond object detection into a platform for understanding physical environments.
@@ -102,12 +102,14 @@ Future experiments include persistent object tracking, spatial mapping, scene in
 
 ◈ PRIVACY
 
-Camera access requires explicit browser permission. Video processing is performed locally in the browser using MediaPipe.
+Camera access requires explicit browser permission.
 
-The current application does not intentionally upload camera footage to a custom backend.
+Video processing is performed locally in the browser using MediaPipe. The current application does not intentionally upload camera footage to a custom backend.
 
 <p align="center">
-<strong>VELVET — REALITY, REIMAGINED.</strong>
-<br>
-<sub>An independent experimental project. Built with curiosity.</sub>
+
+VELVET — REALITY, REIMAGINED.
+
+An independent experimental project. Built with curiosity.
+
 </p>
